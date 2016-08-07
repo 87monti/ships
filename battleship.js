@@ -201,9 +201,7 @@ angular.module('app', [])
         $scope.test = 10;
 
 
-        $scope.fire = function(){
-            var guess = $scope.target.toUpperCase();
-            controller.processGuess(guess);
-            $scope.target = "";
+        $scope.fire = function(field){
+            controller.processGuess(field);
         }
     });
