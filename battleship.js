@@ -209,4 +209,9 @@ function init() {
 
 	// Umieszczamy okręty na planszy.
 	model.generateShipLocations();
+
 }
+angular.module('app',[])
+	.controller('myCtrl' , function ($scope) {
+	$scope.test=10;
+});
